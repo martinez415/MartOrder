@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .water-container {
+      position: relative;
+      height: 100vh;
+      background-color: #3498db; /* Water color */
+      overflow: hidden;
+    }
+
+    .ripple {
+      position: absolute;
+      background: radial-gradient(circle, transparent 20%, rgba(255, 255, 255, 0.3) 70%);
+      transform: scale(0);
+      animation: rippleAnimation 2s linear infinite;
+    }
+
+    @keyframes rippleAnimation {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="water-container">
+    <div class="ripple"></div>
+  </div>
+</body>
+</html>

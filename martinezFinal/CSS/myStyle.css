@@ -1,0 +1,121 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("../Images/backgoundImage.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 14pt;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    color: white;
+    text-shadow: -3px 3px 0 #3c4de7, -6px 6px 0 rgb(51, 97, 153);
+}
+
+h1:hover {
+    animation: glitch 2s infinite linear alternate-reverse;
+}
+  
+@keyframes glitch {
+    0% {
+      transform: translate(2px, 2px);
+    }
+    25% {
+      transform: translate(-2px, -2px);
+    }
+    50% {
+      transform: translate(4px, 4px);
+    }
+    75% {
+      transform: translate(-4px, -4px);
+    }
+    100% {
+      transform: translate(2px, 2px);
+    }
+}
+  
+
+main {
+    width: 700px;
+    height: 800px;
+    margin: 0 auto 0 auto;
+    border: 10px inset rgba(207, 206, 206, 0.495);
+    padding: 15px 15px 15px 15px;
+    background-image: url("../Images/backgoundImage.jpg"),  url("../Images/liquidsim.jpg");
+    background-size: cover;
+    background-blend-mode: darken; 
+    backdrop-filter: blur(5px);   
+}
+
+#custInfo {
+    width: 400px;
+    height: 200px;
+    float: left;
+    margin-bottom: 15px;
+    padding: 25px 25px 25px 25px;
+    background-color: rgba(135, 194, 212, 0.474);  
+    backdrop-filter: blur(5px);
+    border: 10px outset rgba(207, 206, 206, 0.495); 
+
+}
+
+#buildYourPizza {
+    width: 150px;
+    height: 200px;
+    float: right;
+    padding: 25px 25px 25px 25px;
+    background-color: rgba(135, 194, 212, 0.474);  
+    backdrop-filter: blur(5px);
+    border: 10px outset rgba(207, 206, 206, 0.495);
+}
+
+#orderDetails {
+    width: 625px;
+    padding: 25px 25px 25px 25px;
+    background-color: rgba(135, 194, 212, 0.474);  
+    backdrop-filter: blur(5px);
+    border: 10px outset rgba(207, 206, 206, 0.495); 
+}
+
+span {
+    color: rgb(255, 0, 0);
+    font-size: 10pt;
+}
+
+legend {
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+}
+
+input {
+    margin-left: 5px;
+}
+
+textarea {
+    width: 620px;
+    height: 300px;
+}
+
+.ordAmount {
+    width: 15px;
+}
+
+.buttons {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+    background-color: rgba(176, 224, 230, 0.81);
+    width: 140px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.buttons:hover {
+    background-color: rgba(176, 224, 230, 0.81);
+    animation: glitch 2s infinite linear alternate-reverse;
+}
+
+.input {
+    width: 250px;
+}
